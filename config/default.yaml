@@ -1,0 +1,52 @@
+# Configuración por defecto de MiLoto Quant
+# Copia este archivo como local.yaml y modifica según necesites
+
+data:
+  max_number: 39
+  numbers_per_draw: 5
+  min_history: 30
+  max_history: 10000
+
+features:
+  alpha_decay: 0.997
+  rolling_windows: [5, 10, 20, 50]
+  ema_alpha: 0.3
+  pair_matrix_window: 80
+
+model:
+  random_state: 42
+  n_jobs: 4
+  lgbm_n_estimators: 200
+  lgbm_learning_rate: 0.02
+  lgbm_max_depth: 6
+  xgb_n_estimators: 180
+  xgb_learning_rate: 0.025
+  xgb_max_depth: 5
+  rf_n_estimators: 180
+  rf_max_depth: 12
+  et_n_estimators: 180
+  et_max_depth: 12
+
+ensemble:
+  use_dynamic_weights: true
+  ml_weight: 0.82
+  bayes_weight: 0.18
+  temperature: 0.78
+  clip_min: 0.001
+  clip_max: 0.35
+
+monte_carlo:
+  n_samples: 30000
+  temperature: 0.78
+  top_k: 10
+
+backtest:
+  start_ratio: 0.80
+  n_steps: 50
+
+validation:
+  n_splits: 5
+
+report:
+  output_dir: output
+  pdf_filename: reporte_quant_miloto.pdf
