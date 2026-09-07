@@ -1,0 +1,111 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Environments
+.env
+.env.local
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.project
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
+
+# Data files (generados por los scripts)
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Modelos entrenados
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Logs
+*.log
+logs/
+
+# Output directory
+output/
+
+# Configuración local
+config/local.yaml
+config/secrets.yaml
+
+# Cache
+.cache/
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Catboost
+catboost_info/
